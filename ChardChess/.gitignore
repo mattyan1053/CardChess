@@ -259,10 +259,3 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
-
-# Game files
-*/[Gg]ame/*
-[Ee]ngine/
-[Ee]xample/
-[Ss]creenshot/
-*/CCS_Launcher_log.html

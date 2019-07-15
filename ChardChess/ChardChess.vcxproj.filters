@@ -76,10 +76,76 @@
     <Filter Include="リソース ファイル\Example\Well">
       <UniqueIdentifier>{eb86b9be-05b8-45c6-89c8-f91a5437157c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ヘッダー ファイル\Title">
+      <UniqueIdentifier>{d9a84048-2d47-4bee-b2cf-0ef9b67fdfb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game">
+      <UniqueIdentifier>{0076de81-868e-4e8a-ab52-560e2a32ec69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Board">
+      <UniqueIdentifier>{90c43d9c-5def-495b-bf9c-941eac95359b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Board\Piece">
+      <UniqueIdentifier>{f06fec51-446a-4c7f-b855-0d73a8472b9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Title">
+      <UniqueIdentifier>{c6f3522e-861b-435a-ba83-41a9ac26d4af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game">
+      <UniqueIdentifier>{f07d939b-5c91-4e9b-9bb4-65a60540b496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Board">
+      <UniqueIdentifier>{126fe986-c43d-44a0-a9cc-7d99f9533d25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Board\Piece">
+      <UniqueIdentifier>{139b359a-24e6-44b4-b5d4-4d7cc561c818}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceLoader.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTitle.cpp">
+      <Filter>ソース ファイル\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>ソース ファイル\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>ソース ファイル\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Board.cpp">
+      <Filter>ソース ファイル\Game\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="Sqr.cpp">
+      <Filter>ソース ファイル\Game\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="Bishop.cpp">
+      <Filter>ソース ファイル\Game\Board\Piece</Filter>
+    </ClCompile>
+    <ClCompile Include="King.cpp">
+      <Filter>ソース ファイル\Game\Board\Piece</Filter>
+    </ClCompile>
+    <ClCompile Include="Knight.cpp">
+      <Filter>ソース ファイル\Game\Board\Piece</Filter>
+    </ClCompile>
+    <ClCompile Include="Pawn.cpp">
+      <Filter>ソース ファイル\Game\Board\Piece</Filter>
+    </ClCompile>
+    <ClCompile Include="Piece.cpp">
+      <Filter>ソース ファイル\Game\Board\Piece</Filter>
+    </ClCompile>
+    <ClCompile Include="Queen.cpp">
+      <Filter>ソース ファイル\Game\Board\Piece</Filter>
+    </ClCompile>
+    <ClCompile Include="Rook.cpp">
+      <Filter>ソース ファイル\Game\Board\Piece</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -275,7 +341,7 @@
     </None>
     <None Include="Engine\Shaders\D3D11\DeferredMesh_Shadow.vs">
       <Filter>リソース ファイル\Engine\Shaders\D3D11</Filter>
-    </None>    
+    </None>
     <None Include="Engine\Shaders\D3D11\DeferredMesh_Textured.ps">
       <Filter>リソース ファイル\Engine\Shaders\D3D11</Filter>
     </None>
@@ -379,7 +445,7 @@
     </Text>
     <Text Include="Example\Shaders\Wave2DPointSprites.hlsl">
       <Filter>リソース ファイル\Example\Shaders</Filter>
-    </Text>   
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <Media Include="Example\Sound.mp3">
@@ -393,5 +459,55 @@
     <Font Include="Example\YomogiFont.ttf">
       <Filter>リソース ファイル\Example</Filter>
     </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Global.hpp">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTitle.hpp">
+      <Filter>ヘッダー ファイル\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Board.hpp">
+      <Filter>ヘッダー ファイル\Game\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="Bishop.hpp">
+      <Filter>ヘッダー ファイル\Game\Board\Piece</Filter>
+    </ClInclude>
+    <ClInclude Include="King.hpp">
+      <Filter>ヘッダー ファイル\Game\Board\Piece</Filter>
+    </ClInclude>
+    <ClInclude Include="Knight.hpp">
+      <Filter>ヘッダー ファイル\Game\Board\Piece</Filter>
+    </ClInclude>
+    <ClInclude Include="Pawn.hpp">
+      <Filter>ヘッダー ファイル\Game\Board\Piece</Filter>
+    </ClInclude>
+    <ClInclude Include="Piece.hpp">
+      <Filter>ヘッダー ファイル\Game\Board\Piece</Filter>
+    </ClInclude>
+    <ClInclude Include="Queen.hpp">
+      <Filter>ヘッダー ファイル\Game\Board\Piece</Filter>
+    </ClInclude>
+    <ClInclude Include="Rook.hpp">
+      <Filter>ヘッダー ファイル\Game\Board\Piece</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.hpp">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Sqr.hpp">
+      <Filter>ヘッダー ファイル\Game\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.hpp">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceLoader.hpp">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>ヘッダー ファイル\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.hpp">
+      <Filter>ヘッダー ファイル\Game</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
