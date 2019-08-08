@@ -4,14 +4,16 @@
 # include "SceneManager.hpp"
 # include "Board.hpp"
 # include "Types.hpp"
+# include "ItemList.hpp"
 
 namespace Game {
 
-	const Point b_pos = { 340, 700 };
+	const Point b_pos = { 140, 700 };
 
 	struct PlayerData {
 		int cost = 0;
 		int maxCost = 0;
+		ItemList sp; // smart phone
 	};
 
 	struct CommonData {
@@ -29,8 +31,13 @@ namespace Game {
 		CommonData() : b(b_pos) {}
 
 		void drawBoard() const;
+		void drawItems() const;
 
-		void CommonData::makeFree();
+		bool chkBdClk();
+		bool chkItmClk();
+		void makeFree();
+		void movePiece();
+		void useItem();
 		void PlayerDataReset(Turn t);
 		void movableCntReset(Turn t);
 	};

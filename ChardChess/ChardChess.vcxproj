@@ -167,9 +167,12 @@
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="GameTitle.cpp" />
     <ClCompile Include="Global.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="ItemList.cpp" />
     <ClCompile Include="King.cpp" />
     <ClCompile Include="Knight.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MoveCntInc.cpp" />
     <ClCompile Include="Pawn.cpp" />
     <ClCompile Include="Piece.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -296,8 +299,11 @@
     <ClInclude Include="GameManager.hpp" />
     <ClInclude Include="GameTitle.hpp" />
     <ClInclude Include="Global.hpp" />
+    <ClInclude Include="Item.hpp" />
+    <ClInclude Include="ItemList.hpp" />
     <ClInclude Include="King.hpp" />
     <ClInclude Include="Knight.hpp" />
+    <ClInclude Include="MoveCntInc.hpp" />
     <ClInclude Include="Pawn.hpp" />
     <ClInclude Include="Piece.hpp" />
     <ClInclude Include="Player.hpp" />

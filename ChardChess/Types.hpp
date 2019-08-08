@@ -16,7 +16,7 @@ namespace Game {
 
 	enum SelectedItem {
 		Pc, // ‹î
-		card,
+		item,
 		NonSelected
 	};
 

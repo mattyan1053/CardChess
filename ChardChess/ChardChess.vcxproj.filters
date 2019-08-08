@@ -100,6 +100,18 @@
     <Filter Include="ソース ファイル\Game\Board\Piece">
       <UniqueIdentifier>{139b359a-24e6-44b4-b5d4-4d7cc561c818}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ヘッダー ファイル\Game\ItemList">
+      <UniqueIdentifier>{e21c2c7e-ddd6-4b95-94b4-69f14df9725d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\ItemList">
+      <UniqueIdentifier>{7d04e1c3-b97e-4719-be45-c55f5af112f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\ItemList\Items">
+      <UniqueIdentifier>{31793f5f-3947-4db9-b4fa-a0cc2e5e549b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\ItemList\Items">
+      <UniqueIdentifier>{0a53fc76-cf50-42b0-8fcf-970b447c153f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -146,6 +158,15 @@
     </ClCompile>
     <ClCompile Include="Rook.cpp">
       <Filter>ソース ファイル\Game\Board\Piece</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemList.cpp">
+      <Filter>ソース ファイル\Game\ItemList</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>ソース ファイル\Game\ItemList\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveCntInc.cpp">
+      <Filter>ソース ファイル\Game\ItemList\Items</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -508,6 +529,15 @@
     </ClInclude>
     <ClInclude Include="GameManager.hpp">
       <Filter>ヘッダー ファイル\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemList.hpp">
+      <Filter>ヘッダー ファイル\Game\ItemList</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.hpp">
+      <Filter>ヘッダー ファイル\Game\ItemList\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveCntInc.hpp">
+      <Filter>ヘッダー ファイル\Game\ItemList\Items</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
