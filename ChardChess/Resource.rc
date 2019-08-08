@@ -52,3 +52,23 @@
 // App Resource
 100		ICON	"Icon.ico"
 //101		FILE	"Engine/Splash.png"
+
+// IMAGES
+1000 FILE "ccslogo.png"
+1001 FILE "title.png"
+1002 FILE "result.png"
+1003 FILE "winner.png"
+
+1011 FILE "bishop_white.png"
+1021 FILE "bishop_black.png"
+1012 FILE "king_white.png"
+1022 FILE "king_black.png"
+1013 FILE "knight_white.png"
+1023 FILE "knight_black.png"
+1014 FILE "pawn_white.png"
+1024 FILE "pawn_black.png"
+1015 FILE "queen_white.png"
+1025 FILE "queen_black.png"
+1016 FILE "rook_white.png"
+1026 FILE "rook_black.png"
+

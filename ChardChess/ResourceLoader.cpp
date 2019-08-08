@@ -17,10 +17,10 @@ void LoadFonts() {
 
 void LoadPictures() {
 
-	TextureAsset::Register(L"BACK", L"./ccslogo.png");
-	TextureAsset::Register(L"TITLE", L"./title.png");
-	TextureAsset::Register(L"RESULT", L"./result.png");
-	TextureAsset::Register(L"WINNER", L"./winner.png");
+	TextureAsset::Register(L"BACK", L"/1000");
+	TextureAsset::Register(L"TITLE", L"/1001");
+	TextureAsset::Register(L"RESULT", L"/1002");
+	TextureAsset::Register(L"WINNER", L"/1003");
 
 }
 

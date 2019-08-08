@@ -6,10 +6,10 @@ namespace Game {
 		owner = _owner;
 		name = L"ビショップ";
 		if (owner == P1) {
-			t = Texture(L"bishop_white.png");
+			t = Texture(L"/1011");
 		}
 		else {
-			t = Texture(L"bishop_black.png");
+			t = Texture(L"/1021");
 		}
 	}
 
