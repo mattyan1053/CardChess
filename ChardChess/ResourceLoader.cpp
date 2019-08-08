@@ -8,6 +8,7 @@ void LoadFonts() {
 	FontAsset::Register(L"INFO", 12, Typeface::Default);
 	FontAsset::Register(L"INFOTITLE", 15, Typeface::Bold);
 	FontAsset::Register(L"LOG", 10, Typeface::Default);
+	FontAsset::Register(L"COST", 40, Typeface::Black);
 
 }
 

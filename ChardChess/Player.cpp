@@ -8,9 +8,12 @@ namespace Game {
 		b.set(Point(500, 20), Size(200, 50), L"ターン終了");
 		if (m_data->now == P1) m_data->logStr.push_back(Format(L"ターン", ++m_data->turn));
 		m_data->logStr.push_back(Format(m_data->now == P1 ? L"白" : L"黒", L"のターン"));
+		
+		m_data->data[m_data->now].sp.addItem();
 
 		m_data->data[m_data->now].cost = ++m_data->data[m_data->now].maxCost;		
 		m_data->PlayerDataReset(m_data->now);
+
 
 	}
 
@@ -24,14 +27,7 @@ namespace Game {
 		// ターン終了
 		if (b.update()) {
 			m_data->movableCntReset(m_data->now);
-			if (m_data->next == P1) {
-				m_data->now = P1;
-				m_data->next = P2;
-			}
-			else {
-				m_data->now = P2;
-				m_data->next = P1;
-			}
+			std::swap(m_data->now, m_data->next);
 			changeScene(m_data->now);
 			return;
 		}

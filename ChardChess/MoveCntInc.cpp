@@ -9,10 +9,10 @@ namespace Game {
 		logStr = L"ƒRƒ}‚ÌˆÚ“®‰ñ”‚ğ‚P‘‚â‚µ‚Ü‚µ‚½B";
 	}
 
-	std::pair<int, String> MoveCntInc::execute(Sqr& sq, Turn t) {
-		auto p = sq.getPiece();
-		if (p == nullptr) return std::make_pair(-1, L"");
-		p->movableNum++;
+	std::pair<int, String> MoveCntInc::execute(Board b, Point p, Turn t) {
+		auto pc = b.b[p.y][p.x].getPiece();
+		if (pc == nullptr) return std::make_pair(-1, L"");
+		pc->movableNum++;
 		return std::make_pair(cost, logStr);
 
 	}
@@ -20,7 +20,6 @@ namespace Game {
 	void MoveCntInc::draw(Point pos) const {
 
 		Item::draw(pos);
-		FontAsset(L"ITEMNAME").draw(itemName, pos + Point(30, 20), Palette::Black);
 		Item::drawAlpha(pos);
 
 	}

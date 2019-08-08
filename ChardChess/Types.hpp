@@ -20,6 +20,12 @@ namespace Game {
 		NonSelected
 	};
 
+	enum Items {
+		moveCntInc,
+		moveMaxCntInc,
+		itemNum
+	};
+
 	static const Point sq_size = { 75, 75 };
 
 }

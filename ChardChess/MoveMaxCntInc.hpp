@@ -5,9 +5,9 @@
 
 namespace Game {
 
-	struct MoveCntInc : public Item {
+	struct MoveMaxCntInc : public Item {
 
-		MoveCntInc();
+		MoveMaxCntInc();
 
 		std::pair<int, String> execute(Board b, Point p, Turn t) override;
 

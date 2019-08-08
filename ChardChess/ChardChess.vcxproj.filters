@@ -180,6 +180,9 @@
     <ClCompile Include="GameResult.cpp">
       <Filter>ソース ファイル\Result</Filter>
     </ClCompile>
+    <ClCompile Include="MoveMaxCntInc.cpp">
+      <Filter>ソース ファイル\Game\ItemList\Items</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc">
@@ -556,6 +559,9 @@
     </ClInclude>
     <ClInclude Include="GameResult.hpp">
       <Filter>ヘッダー ファイル\Result</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveMaxCntInc.hpp">
+      <Filter>ヘッダー ファイル\Game\ItemList\Items</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

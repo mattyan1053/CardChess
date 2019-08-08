@@ -18,7 +18,7 @@ namespace Game {
 
 	void CommonData::drawInfo() const {
 
-		FontAsset(L"COST").draw(Format(data[now].cost, L"/", data[now].maxCost), { 150, 30 }, Palette::White);
+		FontAsset(L"COST").draw(Format(L"コスト ", data[now].cost, L"/", data[now].maxCost), { 150, 30 }, Palette::White);
 
 	}
 
@@ -184,12 +184,12 @@ namespace Game {
 			for (int x = 1; x < N; x++) {
 				if (b.b[y][x].isClicked()) {
 					if (b.b[y][x].getHighlight()) {
-						auto p = b.b[y][x];
+						Point p(x, y);
 						if (data[now].cost < data[now].sp.getCost()) {
 							logStr.push_back(L"コストが足りません。");
 							continue;
 						}
-						auto c = data[now].sp.execute(p, now);
+						auto c = data[now].sp.execute(b, p, now);
 						data[now].cost -= c.first;
 						logStr.push_back(c.second);
 					}
