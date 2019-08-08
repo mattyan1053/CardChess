@@ -118,6 +118,12 @@
     <Filter Include="ヘッダー ファイル\Result">
       <UniqueIdentifier>{6495c251-d2de-4037-8c72-62b99db72742}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ヘッダー ファイル\Effects">
+      <UniqueIdentifier>{0c8ad376-8588-44d0-84e9-536d4dc1f66f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Effects">
+      <UniqueIdentifier>{b83999da-41e7-4114-afe8-061a5cf410de}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -182,6 +188,21 @@
     </ClCompile>
     <ClCompile Include="MoveMaxCntInc.cpp">
       <Filter>ソース ファイル\Game\ItemList\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Bomb.cpp">
+      <Filter>ソース ファイル\Game\ItemList\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="FrontDestroy.cpp">
+      <Filter>ソース ファイル\Game\ItemList\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectBomb.cpp">
+      <Filter>ソース ファイル\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Up1.cpp">
+      <Filter>ソース ファイル\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectString.cpp">
+      <Filter>ソース ファイル\Effects</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -562,6 +583,21 @@
     </ClInclude>
     <ClInclude Include="MoveMaxCntInc.hpp">
       <Filter>ヘッダー ファイル\Game\ItemList\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Bomb.hpp">
+      <Filter>ヘッダー ファイル\Game\ItemList\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="FrontDestroy.hpp">
+      <Filter>ヘッダー ファイル\Game\ItemList\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectBomb.hpp">
+      <Filter>ヘッダー ファイル\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Up1.hpp">
+      <Filter>ヘッダー ファイル\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectString.hpp">
+      <Filter>ヘッダー ファイル\Effects</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

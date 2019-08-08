@@ -1,4 +1,5 @@
 ﻿# include <Siv3D.hpp>
+# include <rnfs.h>
 # include "SceneManager.hpp"
 # include "GameTitle.hpp"
 # include "GameManager.hpp"
@@ -23,6 +24,12 @@ void Main() {
 
 	while (System::Update()) {
 		manager.updateAndDraw();
+
+		TaskCall::All::Update();
+		Task::All::Update();
+
 	}
+
+	Task::All::Clear();
 
 }

@@ -9,7 +9,7 @@ namespace Game {
 
 		MoveMaxCntInc();
 
-		std::pair<int, String> execute(Board b, Point p, Turn t) override;
+		std::pair<int, String> execute(Board &b, Point p, Turn t) override;
 
 		void draw(Point pos) const override;
 

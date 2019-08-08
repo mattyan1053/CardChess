@@ -27,7 +27,7 @@ namespace Game {
 
 		void addItem();
 
-		std::pair<int, String> execute(Board b, Point p, Turn t);
+		std::pair<int, String> execute(Board &b, Point p, Turn t);
 		int getCost() const { return items[selected]->cost; }
 		Item* getItem() const;
 

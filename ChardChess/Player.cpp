@@ -1,5 +1,6 @@
 # include "Player.hpp"
 # include "Global.hpp"
+# include "EffectString.hpp"
 
 namespace Game {
 
@@ -9,6 +10,9 @@ namespace Game {
 		if (m_data->now == P1) m_data->logStr.push_back(Format(L"ターン", ++m_data->turn));
 		m_data->logStr.push_back(Format(m_data->now == P1 ? L"白" : L"黒", L"のターン"));
 		
+		if (m_data->now == P1) Create<EffectString>(Window::Center(), L"White Turn");
+		else Create<EffectString>(Window::Center(), L"Black Turn");
+
 		m_data->data[m_data->now].sp.addItem();
 
 		m_data->data[m_data->now].cost = ++m_data->data[m_data->now].maxCost;		
@@ -26,6 +30,9 @@ namespace Game {
 
 		// ターン終了
 		if (b.update()) {
+			m_data->mode = Free;
+			m_data->sItem = NonSelected;
+			m_data->makeFree();
 			m_data->movableCntReset(m_data->now);
 			std::swap(m_data->now, m_data->next);
 			changeScene(m_data->now);

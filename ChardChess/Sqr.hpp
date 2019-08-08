@@ -15,9 +15,9 @@ namespace Game {
 
 		Piece *p;
 
-		Rect r;
 	
 	public:
+		Rect r;
 
 		Sqr(Point _pos, Point _s_pos);
 

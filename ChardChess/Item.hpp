@@ -20,7 +20,7 @@ namespace Game {
 
 		Item(int _id);
 
-		virtual std::pair<int, String> execute(Board b, Point p, Turn t) = 0;
+		virtual std::pair<int, String> execute(Board &b, Point p, Turn t) = 0;
 
 		virtual void draw(Point pos) const;
 		void drawAlpha(Point pos) const;

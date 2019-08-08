@@ -196,7 +196,7 @@ namespace Game {
 				}
 			}
 		}
-
+		return;
 	}
 
 	void CommonData::PlayerDataReset(Turn t) {
@@ -208,7 +208,7 @@ namespace Game {
 		for (int y = 1; y < N; y++) {
 			for (int x = 1; x < N; x++) {
 				auto pc = b.b[y][x].getPiece();
-				if (pc && pc->owner == t) {
+				if (pc != nullptr && pc->owner == t) {
 					pc->movableNum = pc->movableNumMax;
 				}
 			}

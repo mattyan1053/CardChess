@@ -7,6 +7,9 @@ namespace Title {
 
 	class GameTitle : public BaseApp::Scene {
 
+		int posx = 100;
+		bool mFlag = false;
+
 	public:
 
 		void update() override;

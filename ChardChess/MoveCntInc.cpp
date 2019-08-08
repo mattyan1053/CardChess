@@ -1,4 +1,5 @@
 # include "MoveCntInc.hpp"
+# include "Up1.hpp"
 
 namespace Game {
 
@@ -9,10 +10,11 @@ namespace Game {
 		logStr = L"ƒRƒ}‚ÌˆÚ“®‰ñ”‚ğ‚P‘‚â‚µ‚Ü‚µ‚½B";
 	}
 
-	std::pair<int, String> MoveCntInc::execute(Board b, Point p, Turn t) {
+	std::pair<int, String> MoveCntInc::execute(Board &b, Point p, Turn t) {
 		auto pc = b.b[p.y][p.x].getPiece();
 		if (pc == nullptr) return std::make_pair(-1, L"");
 		pc->movableNum++;
+		Create<Up1>(b.b[p.y][p.x].r.center + Point(0, 0));
 		return std::make_pair(cost, logStr);
 
 	}

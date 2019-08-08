@@ -71,23 +71,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SIV3D_20160812)\Inc;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SIV3D_20160812)\Lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SIV3D_20160812)\ThirdParty\RnfsFramework\Include;$(SIV3D_20160812)\Inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SIV3D_20160812)\ThirdParty\RnfsFramework\Lib;$(SIV3D_20160812)\Lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SIV3D_20160812)\Inc;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SIV3D_20160812)\Lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SIV3D_20160812)\ThirdParty\RnfsFramework\Include;$(SIV3D_20160812)\Inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SIV3D_20160812)\ThirdParty\RnfsFramework\Lib;$(SIV3D_20160812)\Lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SIV3D_20160812)\Inc;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SIV3D_20160812)\Lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SIV3D_20160812)\ThirdParty\RnfsFramework\Include;$(SIV3D_20160812)\Inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SIV3D_20160812)\ThirdParty\RnfsFramework\Lib;$(SIV3D_20160812)\Lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SIV3D_20160812)\Inc;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SIV3D_20160812)\Lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SIV3D_20160812)\ThirdParty\RnfsFramework\Include;$(SIV3D_20160812)\Inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SIV3D_20160812)\ThirdParty\RnfsFramework\Lib;$(SIV3D_20160812)\Lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -164,7 +164,11 @@
   <ItemGroup>
     <ClCompile Include="Bishop.cpp" />
     <ClCompile Include="Board.cpp" />
+    <ClCompile Include="Bomb.cpp" />
     <ClCompile Include="Button.cpp" />
+    <ClCompile Include="EffectBomb.cpp" />
+    <ClCompile Include="EffectString.cpp" />
+    <ClCompile Include="FrontDestroy.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="GameTitle.cpp" />
     <ClCompile Include="Global.cpp" />
@@ -183,6 +187,7 @@
     <ClCompile Include="GameResult.cpp" />
     <ClCompile Include="Rook.cpp" />
     <ClCompile Include="Sqr.cpp" />
+    <ClCompile Include="Up1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc" />
@@ -299,7 +304,11 @@
   <ItemGroup>
     <ClInclude Include="Bishop.hpp" />
     <ClInclude Include="Board.hpp" />
+    <ClInclude Include="Bomb.hpp" />
     <ClInclude Include="Button.hpp" />
+    <ClInclude Include="EffectBomb.hpp" />
+    <ClInclude Include="EffectString.hpp" />
+    <ClInclude Include="FrontDestroy.hpp" />
     <ClInclude Include="GameManager.hpp" />
     <ClInclude Include="GameTitle.hpp" />
     <ClInclude Include="Global.hpp" />
@@ -319,6 +328,7 @@
     <ClInclude Include="SceneManager.hpp" />
     <ClInclude Include="Sqr.hpp" />
     <ClInclude Include="Types.hpp" />
+    <ClInclude Include="Up1.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

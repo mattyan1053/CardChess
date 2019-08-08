@@ -1,6 +1,8 @@
 # include "ItemList.hpp"
 # include "MoveCntInc.hpp"
 # include "MoveMaxCntInc.hpp"
+# include "Bomb.hpp"
+# include "FrontDestroy.hpp"
 
 namespace Game {
 
@@ -51,15 +53,22 @@ namespace Game {
 		case moveCntInc:
 			items.push_back(new MoveCntInc());
 			break;
+		case frontDestroy:
+			items.push_back(new FrontDestroy());
+			break;
 		case moveMaxCntInc:
 			items.push_back(new MoveMaxCntInc());
+			break;
+		case bomb:
+			items.push_back(new Bomb());
+			break;
 		default:
 			break;
 		}
 
 	}
 
-	std::pair<int, String> ItemList::execute(Board b, Point p, Turn t) {
+	std::pair<int, String> ItemList::execute(Board &b, Point p, Turn t) {
 
 		auto ret = items[selected]->execute(b, p, t);
 		delete items[selected];

@@ -22,7 +22,9 @@ namespace Game {
 
 	enum Items {
 		moveCntInc,
+		frontDestroy,
 		moveMaxCntInc,
+		bomb,
 		itemNum
 	};
 
