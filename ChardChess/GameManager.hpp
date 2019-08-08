@@ -17,21 +17,25 @@ namespace Game {
 	};
 
 	struct CommonData {
-		int turn = 1;
+		int turn = 0;
 		Turn now = P1;
 		Turn next = P2;
 		PlayerData data[Turn::PlayerNum];
-		Turn winner;
 		Mode mode = Free;
 		SelectedItem sItem = NonSelected;
+		Turn *winner;
 		Point sSqr;
 		Board b;
+		Array<String> logStr;
 		std::function<void(String)> changeBaseScene;
 
 		CommonData() : b(b_pos) {}
 
 		void drawBoard() const;
 		void drawItems() const;
+		void drawInfo() const;
+		void drawSelectedInfo() const;
+		void drawLog() const;
 
 		bool chkBdClk();
 		bool chkItmClk();
@@ -40,6 +44,8 @@ namespace Game {
 		void useItem();
 		void PlayerDataReset(Turn t);
 		void movableCntReset(Turn t);
+
+		bool chkFin();
 	};
 
 	using GameScene = SceneManager<Turn, CommonData>;

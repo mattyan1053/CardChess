@@ -164,6 +164,7 @@
   <ItemGroup>
     <ClCompile Include="Bishop.cpp" />
     <ClCompile Include="Board.cpp" />
+    <ClCompile Include="Button.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="GameTitle.cpp" />
     <ClCompile Include="Global.cpp" />
@@ -178,6 +179,7 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Queen.cpp" />
     <ClCompile Include="ResourceLoader.cpp" />
+    <ClCompile Include="GameResult.cpp" />
     <ClCompile Include="Rook.cpp" />
     <ClCompile Include="Sqr.cpp" />
   </ItemGroup>
@@ -296,6 +298,7 @@
   <ItemGroup>
     <ClInclude Include="Bishop.hpp" />
     <ClInclude Include="Board.hpp" />
+    <ClInclude Include="Button.hpp" />
     <ClInclude Include="GameManager.hpp" />
     <ClInclude Include="GameTitle.hpp" />
     <ClInclude Include="Global.hpp" />
@@ -309,6 +312,7 @@
     <ClInclude Include="Player.hpp" />
     <ClInclude Include="Queen.hpp" />
     <ClInclude Include="ResourceLoader.hpp" />
+    <ClInclude Include="GameResult.hpp" />
     <ClInclude Include="Rook.hpp" />
     <ClInclude Include="SceneManager.hpp" />
     <ClInclude Include="Sqr.hpp" />

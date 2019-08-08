@@ -11,6 +11,8 @@ namespace Game {
 		Turn owner;
 		bool selected = false;
 
+		String name;
+
 		Texture t;
 
 		int movableNum = 1;

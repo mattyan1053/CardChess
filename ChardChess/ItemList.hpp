@@ -27,7 +27,9 @@ namespace Game {
 
 		void addItem();
 
-		int execute(Sqr& sq, Turn t);
+		std::pair<int, String> execute(Sqr& sq, Turn t);
+		int getCost() const { return items[selected]->cost; }
+		Item* getItem() const;
 
 	};
 

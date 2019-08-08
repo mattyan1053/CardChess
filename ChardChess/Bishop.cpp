@@ -4,6 +4,7 @@ namespace Game {
 
 	Bishop::Bishop(Turn _owner) {
 		owner = _owner;
+		name = L"ビショップ";
 		if (owner == P1) {
 			t = Texture(L"bishop_white.png");
 		}

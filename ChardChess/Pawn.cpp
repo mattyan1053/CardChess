@@ -4,6 +4,7 @@ namespace Game {
 
 	Pawn::Pawn(Turn _owner) {
 		owner = _owner;
+		name = L"É|Å[Éì";
 		if (owner == P1) {
 			t = Texture(L"pawn_white.png");
 		}

@@ -5,6 +5,10 @@ namespace Game {
 
 	void Player::init() {
 
+		b.set(Point(500, 20), Size(200, 50), L"ターン終了");
+		if (m_data->now == P1) m_data->logStr.push_back(Format(L"ターン", ++m_data->turn));
+		m_data->logStr.push_back(Format(m_data->now == P1 ? L"白" : L"黒", L"のターン"));
+
 		m_data->data[m_data->now].cost = ++m_data->data[m_data->now].maxCost;		
 		m_data->PlayerDataReset(m_data->now);
 
@@ -12,8 +16,13 @@ namespace Game {
 
 	void Player::update() {
 
-		// ターン終了チェック
-		if (checkTurnEnd()) {
+		//試合終了チェック
+		if (m_data->chkFin()) {
+			m_data->changeBaseScene(L"Result");
+		}
+
+		// ターン終了
+		if (b.update()) {
 			m_data->movableCntReset(m_data->now);
 			if (m_data->next == P1) {
 				m_data->now = P1;
@@ -24,6 +33,7 @@ namespace Game {
 				m_data->next = P1;
 			}
 			changeScene(m_data->now);
+			return;
 		}
 
 		// 選択モード
@@ -53,26 +63,22 @@ namespace Game {
 			}
 		}
 
-		if (Input::MouseR.clicked) {
-			m_data->changeBaseScene(L"Title");
-		}
-
 		return;
 
 	}
 
 	void Player::draw() const {
 
+		b.draw();
+
 		m_data->drawBoard();
 		m_data->drawItems();
+		m_data->drawInfo();
+		m_data->drawSelectedInfo();
+		m_data->drawLog();
 
-		FontAsset(L"LARGE")((m_data->now == P1 ? L"1P" : L"2P")).draw(0, 0);
+		FontAsset(L"LARGE")((m_data->now == P1 ? L"白" : L"黒")).draw(20, 0);
 
-	}
-
-	bool Player::checkTurnEnd() {
-		if (m_data->data[m_data->now].cost <= 0) return true;
-		return false;
 	}
 
 }

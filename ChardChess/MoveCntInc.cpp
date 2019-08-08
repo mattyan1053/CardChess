@@ -3,14 +3,17 @@
 namespace Game {
 
 	MoveCntInc::MoveCntInc() :Item(0) {
-
+		cost = 1;
+		itemName = L"移動可能回数＋１";
+		desc = L"このターン中、指定の味方コマの移動可能回数\nを＋１する。";
+		logStr = L"コマの移動回数を１増やしました。";
 	}
 
-	int MoveCntInc::execute(Sqr& sq, Turn t) {
+	std::pair<int, String> MoveCntInc::execute(Sqr& sq, Turn t) {
 		auto p = sq.getPiece();
-		if (p == nullptr) return -1;
+		if (p == nullptr) return std::make_pair(-1, L"");
 		p->movableNum++;
-		return cost;
+		return std::make_pair(cost, logStr);
 
 	}
 

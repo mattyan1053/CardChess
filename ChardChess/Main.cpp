@@ -3,6 +3,7 @@
 # include "GameTitle.hpp"
 # include "GameManager.hpp"
 # include "ResourceLoader.hpp"
+# include "GameResult.hpp"
 
 void Main() {
 
@@ -18,6 +19,7 @@ void Main() {
 	BaseApp manager;
 	manager.add<Title::GameTitle>(L"Title");
 	manager.add<Game::GameManager>(L"Game");
+	manager.add<Result::GameResult>(L"Result");
 
 	while (System::Update()) {
 		manager.updateAndDraw();

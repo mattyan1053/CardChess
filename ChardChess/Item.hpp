@@ -6,6 +6,13 @@ namespace Game {
 
 	struct Item {
 
+		int cost = 1;
+
+		String itemName;
+		String desc;
+
+		String logStr;
+
 		const int id;
 		bool clk = false;
 
@@ -13,7 +20,7 @@ namespace Game {
 
 		Item(int _id);
 
-		virtual int execute(Sqr &b, Turn t) = 0;
+		virtual std::pair<int, String> execute(Sqr &b, Turn t) = 0;
 
 		virtual void draw(Point pos) const;
 		void drawAlpha(Point pos) const;

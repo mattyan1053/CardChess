@@ -4,6 +4,7 @@ namespace Game {
 
 	Rook::Rook(Turn _owner) {
 		owner = _owner;
+		name = L"ÉãÅ[ÉN";
 		if (owner == P1) {
 			t = Texture(L"rook_white.png");
 		}

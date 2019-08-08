@@ -4,6 +4,7 @@ namespace Game {
 
 	King::King(Turn _owner) {
 		owner = _owner;
+		name = L"ƒLƒ“ƒO";
 		if (owner == P1) {
 			t = Texture(L"king_white.png");
 		}

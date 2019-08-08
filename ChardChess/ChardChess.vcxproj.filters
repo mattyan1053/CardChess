@@ -112,6 +112,12 @@
     <Filter Include="ソース ファイル\Game\ItemList\Items">
       <UniqueIdentifier>{0a53fc76-cf50-42b0-8fcf-970b447c153f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Result">
+      <UniqueIdentifier>{585c8585-95a6-411a-a154-7efcb72bd0e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Result">
+      <UniqueIdentifier>{6495c251-d2de-4037-8c72-62b99db72742}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -167,6 +173,12 @@
     </ClCompile>
     <ClCompile Include="MoveCntInc.cpp">
       <Filter>ソース ファイル\Game\ItemList\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>ソース ファイル\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameResult.cpp">
+      <Filter>ソース ファイル\Result</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -538,6 +550,12 @@
     </ClInclude>
     <ClInclude Include="MoveCntInc.hpp">
       <Filter>ヘッダー ファイル\Game\ItemList\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.hpp">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GameResult.hpp">
+      <Filter>ヘッダー ファイル\Result</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -51,10 +51,19 @@ namespace Game {
 
 	}
 
-	int ItemList::execute(Sqr& sq, Turn t) {
+	std::pair<int, String> ItemList::execute(Sqr& sq, Turn t) {
+
 		auto ret = items[selected]->execute(sq, t);
+		delete items[selected];
+		items.erase(items.begin() + selected);
 		selected = -1;
 		return ret;
+
+	}
+
+	Item* ItemList::getItem() const {
+		if (selected == -1) return nullptr;
+		return items[selected];
 
 	}
 
