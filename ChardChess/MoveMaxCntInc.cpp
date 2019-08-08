@@ -6,7 +6,7 @@ namespace Game {
 	MoveMaxCntInc::MoveMaxCntInc() :Item(0) {
 		cost = 3;
 		itemName = L"最大移動可能回数＋１";
-		desc = L"この試合中、指定の味方コマの最大移動可能回数\nを＋１する。";
+		desc = L"この試合中、指定の味方コマの最大移動可能回\n数を＋１する。";
 		logStr = L"コマの最大移動回数を１増やしました。";
 	}
 

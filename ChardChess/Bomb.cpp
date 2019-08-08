@@ -6,7 +6,7 @@ namespace Game {
 	Bomb::Bomb() :Item(0) {
 		cost = 4;
 		itemName = L"自爆";
-		desc = L"指定の味方コマを破壊する。周り8マスのコマも破壊する。";
+		desc = L"指定の味方コマを破壊する。周り8マスのコマ\nも破壊する。";
 		logStr = L"自爆しました。";
 	}
 
